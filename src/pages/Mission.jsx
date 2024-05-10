@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/mission.css";
 import MIVI from "../assets/images/mivi.png";
-import DoneIcon from "@mui/icons-material/Done";
+// import DoneIcon from "@mui/icons-material/Done";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const Mission = () => {
   return (
@@ -63,7 +64,8 @@ const Mission = () => {
           <div className="goalcard">
             <div className="blob one">
               <div className="icon one">
-                <DoneIcon />
+                {/* <DoneIcon /> */}
+                <IoMdCheckmarkCircleOutline />
               </div>
             </div>
             <div className="cnt">Promote Health and Well-being</div>
@@ -71,7 +73,8 @@ const Mission = () => {
           <div className="goalcard">
             <div className="blob two">
               <div className="icon two">
-                <DoneIcon />
+                {/* <DoneIcon /> */}
+                <IoMdCheckmarkCircleOutline />
               </div>
             </div>
             <div className="cnt">Advocate and create awareness</div>
@@ -79,7 +82,8 @@ const Mission = () => {
           <div className="goalcard">
             <div className="blob three">
               <div className="icon th">
-                <DoneIcon />
+                {/* <DoneIcon /> */}
+                <IoMdCheckmarkCircleOutline />
               </div>
             </div>
             <div className="cnt">Increase Outreach and Impact</div>
@@ -87,7 +91,8 @@ const Mission = () => {
           <div className="goalcard">
             <div className="blob four">
               <div className="icon four">
-                <DoneIcon />
+                {/* <DoneIcon /> */}
+                <IoMdCheckmarkCircleOutline />
               </div>
             </div>
             <div className="cnt">Engage the community</div>
