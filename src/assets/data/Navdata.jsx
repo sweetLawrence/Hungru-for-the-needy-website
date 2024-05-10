@@ -1,0 +1,1 @@
+export const Navdata = ["Home","About","Contacts","Gallery"]

@@ -1,0 +1,188 @@
+.mission-page {
+  height: auto;
+  width: 100%;
+  background: #fafafa;
+  /* background: red; */
+  overflow: hidden;
+ 
+
+  /* background: red; */
+}
+.mission-page .top {
+  display: flex;
+}
+.mission-page .top .left {
+  width: 50%;
+  /* background: green; */
+}
+.mission-page .top .left .mission-card-x,
+.vision-card {
+  /* background: red; */
+  width: 60%;
+  text-align: start;
+  margin: 1.5em;
+  /* #979797 */
+}
+.mission-page .top .left .mission-card-x {
+  /* background: red; */
+  width: 50%;
+  text-align: start;
+}
+
+.mission-page .top .left .mission-card-x h2,
+.vision-card h2 {
+  font-size: 2.5em;
+  /* color: #00ab4d; */
+}
+.mission-page .content {
+  color: #979797;
+}
+.mission-page .donate-div {
+  text-align: start;
+}
+.mission-page .donate-div button {
+  margin-left: 1.5em;
+}
+.mission-page .top .right {
+  width: 50%;
+  position: relative;
+  /* background: red; */
+}
+.mission-page .top .right img {
+  margin-top: 10%;
+  position: relative;
+  z-index: 1;
+}
+.mission-page .top .right .blob-2 {
+  position: absolute;
+  top: 0;
+  /* background: red; */
+  width: 100%;
+  height: 100%;
+}
+.mission-page svg {
+  z-index: -10;
+  scale: 1.4;
+}
+.mission-page .bottom {
+  /* background: red; */
+  margin-top: 5%;
+  height: 50vh;
+  width: 100%;
+
+}
+.mission-page .bottom .goals {
+margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+ 
+  /* background: red; */
+}
+.mission-page .goalcard {
+
+  width: 25%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  /* background: red; */
+  margin: .1em;
+  padding: .9em;
+
+}
+.mission-page .icon {
+  /* border: 1px solid red; */
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0.9em;
+  margin-bottom: .9em;
+  color: white;
+}
+.mission-page .icon.one {
+    background: #4FFF9E;
+   
+}
+.mission-page .icon.two {
+    background: #0051F6;
+    
+}
+.mission-page .icon.th {
+    background: #ecbd5c;
+    
+}
+.mission-page .icon.four {
+    background: #ff5b5f;
+}
+
+
+@media only screen and (max-width:500px){
+
+      .mission-page .top {
+        flex-direction: column;
+      }
+      .mission-page .top .left {
+        width: 100%;
+        /* background: green; */
+      }
+      .mission-page .top .left .mission-card-x,
+      .vision-card {
+        /* background: red; */
+        width: 90%;
+        text-align: start;
+        margin: 1.5em;
+        /* #979797 */
+      }
+      .mission-page .top .left .mission-card-x {
+        /* background: red; */
+        width: 90%;
+        text-align: start;
+      }
+      
+      .mission-page .top .left .mission-card-x h2,
+      .vision-card h2 {
+        font-size: 2.5em;
+        /* color: #00ab4d; */
+      }
+      .mission-page .content {
+        color: #979797;
+      }
+      .mission-page .donate-div {
+        text-align: start;
+      }
+      .mission-page .donate-div button {
+        margin-left: 1.5em;
+      }
+      .mission-page .top .right {
+        width: 100%;
+        /* background: red; */
+      }
+      .mission-page .top .right img {
+        margin-top: 10%;
+        margin-right: 200px;
+        /* background: red; */
+        right: 80px;
+        scale: .9;
+      }
+   
+      .mission-page .bottom {
+         height: 70vh;
+      }
+      .mission-page .bottom .goals {
+        flex-direction: column;
+      }
+      .mission-page .goalcard {
+        width: 98%;
+        /* background: #eaeaff; */
+        background: white;
+        box-shadow: 1px 1px 15px rgb(248, 241, 241);
+      }
+     
+  
+      
+}

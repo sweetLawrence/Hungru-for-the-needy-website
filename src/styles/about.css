@@ -1,0 +1,127 @@
+.about {
+  overflow: hidden;
+  margin: 20px auto;
+  display: flex;
+  /* padding: 20px; */
+  /* max-width: 800px; */
+  width: 100%;
+  /* background-color: #f9f9f9; */
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.about .left {
+  /* background: red; */
+  width: 40%;
+  padding-left: 2.6em;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.about .cont {
+  width: 80%;
+}
+.about .content {
+  display: inline-block;
+  text-align: start;
+  padding: 0.9em;
+  /* width: 30%; */
+}
+.about .content span {
+  color: #00ab4d;
+  font-weight: 600;
+}
+.about .left h2 {
+  color: #00ab4d;
+  font-size: 4em;
+  text-align: start;
+  margin-left: 0.1em;
+}
+.about .right {
+  width: 40%;
+  position: relative;
+  /* height: 100vh; */
+  /* background: green; */
+}
+.about .right img {
+  scale: 1.1;
+  margin-right: -60%;
+  /* background: red; */
+}
+.about .blob {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  /* background: red; */
+}
+.about .blob svg {
+  height: 100%;
+  width: 100%;
+  scale: 2.1;
+  transform: rotate(40deg)
+}
+.about .readmore {
+  /* background: red; */
+  text-align: start;
+}
+.about .read_more {
+  margin-left: 0.7em;
+}
+
+@media (max-width: 767px) {
+  .about {
+    flex-direction: column;
+    /* margin-top: 40%; */
+  }
+  .about .left {
+    width: 100%;
+    padding-left: .4em;
+    /* order: 2; */
+  }
+  .about .right {
+    width: 100%;
+  }
+  .about .cont {
+    width: 100%;
+  }
+  .about .right {
+    margin-top: -10%;
+    /* order: 1; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* background: green; */
+  }
+  .about .right img {
+    scale: 1;
+   
+  
+    /* scale: .9; */
+    width: 100%;
+    
+    /* background: red; */
+    /* top: 50%; */
+  }
+  .about .blob {
+   
+    /* background: red; */
+    width: 100%;
+    top: -20px;
+    right: 0;
+  }
+  .about .blob svg {
+    height: 100%;
+    width: 100%;
+    scale: 2.2;
+  }
+  .about .left h2 {
+    color: #00ab4d;
+    font-size: 3.5em;
+    text-align: start;
+    /* margin: 0.1em; */
+    /* background: red; */
+  }
+}

@@ -1,0 +1,53 @@
+.card{
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    color: white;
+    /* border: 1px solid red; */
+    width: 600px;
+    width: 50%;
+}
+
+.home_card .slogan {
+   
+    color: #00ab4d;
+    font-size: 1.5em;
+    margin: 0.5em;
+    font-weight: 700;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: cursive;
+    margin-left: 0;
+    text-align: start;
+  }
+  .home_card h3 {
+    color: white;
+    font-size: 2.9em;
+    margin: 0.3em;
+    margin-left: 0;
+    text-align: start;
+  }
+  .home_card .mission {
+    color: white;
+    font-size: 1.1em;
+    margin: 0.5em;
+    color: #e2b5b1;
+    color: #4e89ff;
+    color: white;
+    margin-left: 0;
+    text-align: start;
+  }
+  .home_card .dnt{
+    /* background: red; */
+    text-align: start;
+  }
+  @media only screen and (max-width:500px){
+    .card{
+        width: 90%;
+        position: absolute;
+        top: 65px;
+        left: 2px;
+        color: white;
+        scale: .8;
+       
+    }
+  }
