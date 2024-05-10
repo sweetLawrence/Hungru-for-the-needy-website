@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Navdata } from "../assets/data/Navdata";
-import { MdMenu } from "react-icons/md";
+// import { MdMenu } from "react-icons/md";
+// import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import LOGO from "../assets/images/hftn-logo.png";
 import "../styles/navbar.css";
 import 'animate.css';
