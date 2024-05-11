@@ -8,6 +8,8 @@ import FOODICON from '../assets/images/foodicon.png'
 import MENTORSHIP from '../assets/images/donate.jpg'
 import MENTORSHIPICON from '../assets/images/mentorshipicon.png'
 import CLEANUPICON from '../assets/images/cleanupicon.png'
+import CLEANUP from '../assets/images/commcleanup.png'
+import SCHOLARICON from '../assets/images/scholaricon.png'
 
 const Services = () => {
   return (
@@ -19,8 +21,8 @@ const Services = () => {
             <ServiceCard icon={MENSES} image={PADS} text="Menstrual Hygiene Support"/>
             <ServiceCard icon={FOODICON} image={FEEDING} text="Food Assistance"/>
             <ServiceCard icon={MENTORSHIPICON} image={MENTORSHIP} text="Mentorship Programs"/>
-            <ServiceCard icon={CLEANUPICON} image={MENTORSHIP} text="Community Cleanup"/>
-            {/* <ServiceCard icon={MENTORSHIPICON} image={MENTORSHIP} text="Mentorship Programs"/> */}
+            <ServiceCard icon={CLEANUPICON} image={CLEANUP} text="Community Cleanup"/>
+            <ServiceCard icon={SCHOLARICON} image={MENTORSHIP} text="Schorlaship Opportunities"/>
             {/* <ServiceCard icon={MENTORSHIPICON} image={MENTORSHIP} text="Mentorship Programs"/> */}
           
         </div>
