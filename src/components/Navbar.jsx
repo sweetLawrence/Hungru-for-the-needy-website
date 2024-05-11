@@ -6,10 +6,14 @@ import LOGO from "../assets/images/hftn-logo.png";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
+  const bottomTextStyle = {
+    color: scrolled ? "#000" : "#fff", 
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      if (scrollTop > 100) { // Change 100 to your desired scroll position
+      if (scrollTop > 100) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -23,16 +27,15 @@ const Navbar = () => {
     };
   }, []);
 
-
   return (
-     <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
         <div className="image">
           <img src={LOGO} alt="logo" />
         </div>
         <div className="name">
           <span className="top">Hungry For</span>
-          <span className="bottom">The Needy</span>
+          <span className="bottom" style={bottomTextStyle}>The Needy</span>
         </div>
       </div>
 
