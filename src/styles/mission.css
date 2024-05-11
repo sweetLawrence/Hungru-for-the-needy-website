@@ -4,6 +4,7 @@
   background: hsl(0, 0%, 98%);
   /* background: red; */
   overflow: hidden;
+ 
 
   /* background: red; */
 }
@@ -66,8 +67,9 @@
 .mission-page .bottom {
   /* background: red; */
   margin-top: 5%;
-  height: 30vh;
+  height: 40vh;
   width: 100%;
+  margin-bottom: 20%;
 
 }
 .mission-page .bottom .goals {
