@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/home.css";
 import HOME from "../assets/images/home.jpg";
-// import WAVE from '../assets/images/bg.svg'
 import IMG2 from "../assets/images/donate.jpg";
 import HomeCard from "../components/HomeCard";
 
