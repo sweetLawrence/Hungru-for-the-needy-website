@@ -1,10 +1,9 @@
 .mission-page {
   height: auto;
   width: 100%;
-  background: #fafafa;
+  background: hsl(0, 0%, 98%);
   /* background: red; */
   overflow: hidden;
- 
 
   /* background: red; */
 }
@@ -67,7 +66,7 @@
 .mission-page .bottom {
   /* background: red; */
   margin-top: 5%;
-  height: 50vh;
+  height: 30vh;
   width: 100%;
 
 }
@@ -171,7 +170,7 @@ margin: 0 auto;
       }
    
       .mission-page .bottom {
-         height: 100vh;
+         height: 70vh;
       }
       .mission-page .bottom .goals {
         flex-direction: column;
