@@ -5,7 +5,8 @@ import PADS from '../assets/images/sanitary.webp'
 import MENSES from '../assets/images/menses.png'
 import FEEDING from '../assets/images/feeding.webp'
 import FOODICON from '../assets/images/foodicon.png'
-
+import MENTORSHIP from '../assets/images/donate.jpg'
+import MENTORSHIPICON from '../assets/images/mentorshipicon.png'
 
 const Services = () => {
   return (
@@ -16,7 +17,7 @@ const Services = () => {
         <div className="service-section">
             <ServiceCard icon={MENSES} image={PADS} text="Menstrual Hygiene Support"/>
             <ServiceCard icon={FOODICON} image={FEEDING} text="Food Assistance"/>
-            {/* <ServiceCard icon={MENSES} image={PADS} text="Menstrual Hygiene Support"/> */}
+            <ServiceCard icon={MENTORSHIPICON} image={MENTORSHIP} text="Mentorship Programs"/>
           
         </div>
     </div>
