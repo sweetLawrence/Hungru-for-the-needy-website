@@ -4,8 +4,20 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import MainPage from "./pages/MainPage";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Change the delay time as needed
+
+    // Cleanup function to clear the timeout
+    return () => clearTimeout(timeout);
+  }, []);
+
   const isMobile = () => {
     return window.innerWidth <= 768;
   };
@@ -23,6 +35,8 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter> */}
+      
+       {/* {loading ? <Loading /> : <YourMainComponent />} */}
 
       {isMobile() ? <MobileNav /> : <Navbar />}
       <Home />
