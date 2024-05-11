@@ -1,6 +1,10 @@
 import React from 'react'
 import '../styles/services.css'
 import ServiceCard from '../components/ServiceCard'
+import PADS from '../assets/images/sanitary.webp'
+import MENSES from '../assets/images/menses.png'
+
+
 const Services = () => {
   return (
     <div className='services'>
@@ -8,12 +12,8 @@ const Services = () => {
             <h2>What We Do</h2>
         </div>
         <div className="service-section">
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
+            <ServiceCard icon={MENSES} image={PADS} text="Menstrual Hygiene Support"/>
+          
         </div>
     </div>
   )
