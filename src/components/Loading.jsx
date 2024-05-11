@@ -29,7 +29,10 @@ const Loading = () => {
 
   return (
     <div className='loading animate__animated animate__zoomIn'>
-      <img src={charityLogo} alt="Charity Logo" className="x-logo" />
+      {/* <img src={charityLogo} alt="Charity Logo" className="x-logo" /> */}
+      <div className="tex">
+        HUNGRY FOR THE NEEDY FOUNDATION
+      </div>
       <div className="loading-bar">
         <div className="loading-bar-inner" style={loadingBarStyle}>
           {loadingPercentage}%

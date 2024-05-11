@@ -29,6 +29,11 @@ body {
   width: 100%;
 }
 
+.loading .tex{
+  font-size: 3.2em;
+  font-weight: 700;
+  color: #00ab4d;
+}
 .x-logo {
   width: 200px;
   height: 00px;
