@@ -3,6 +3,8 @@ import '../styles/services.css'
 import ServiceCard from '../components/ServiceCard'
 import PADS from '../assets/images/sanitary.webp'
 import MENSES from '../assets/images/menses.png'
+import FEEDING from '../assets/images/feeding.webp'
+import FOODICON from '../assets/images/foodicon.png'
 
 
 const Services = () => {
@@ -13,6 +15,8 @@ const Services = () => {
         </div>
         <div className="service-section">
             <ServiceCard icon={MENSES} image={PADS} text="Menstrual Hygiene Support"/>
+            <ServiceCard icon={FOODICON} image={FEEDING} text="Food Assistance"/>
+            {/* <ServiceCard icon={MENSES} image={PADS} text="Menstrual Hygiene Support"/> */}
           
         </div>
     </div>
