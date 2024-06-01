@@ -3,12 +3,21 @@ import "../styles/home.css";
 import HOME from "../assets/images/home.jpg";
 import IMG2 from "../assets/images/donate.jpg";
 import HomeCard from "../components/HomeCard";
+import { useState } from "react";
 
-const Home = () => {
+const Home = ({home, onImageLoaded}) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoaded = () => {
+    console.log("Image loaded");
+    setImageLoaded(true);
+    onImageLoaded(); // Call the callback function provided by the parent component
+  };
+
   return (
     <div className="home">
       <div className="home_image">
-        <img src={HOME} alt="home_image" />
+        <img src={home} alt="home_image" onLoad={handleImageLoaded} />
       </div>
       <div className="card">
         <HomeCard />

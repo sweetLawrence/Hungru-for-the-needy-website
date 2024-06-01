@@ -6,70 +6,40 @@ import Home from "./pages/Home";
 import MainPage from "./pages/MainPage";
 import { useEffect, useState } from "react";
 import Loading from "./components/Loading";
+import HOME from "./assets/images/home.jpg";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const preloadImages = () => {
-      // List of image URLs to preload
-      const imageUrls = [
-        "./assets/images/home.jpg",
-        "./assets/images/donate.jpg",
-        "./assets/images/charity.webp",
-      
-      ];
+  const handleImageLoaded = () => {
 
-      // Create image objects and load them in the background
-      const images = [];
-      for (let i = 0; i < imageUrls.length; i++) {
-        const img = new Image();
-        img.src = imageUrls[i];
-        images.push(img);
-      }
-
-      // Check if all images are loaded
-      let loadedCount = 0;
-      images.forEach((img) => {
-        img.onload = () => {
-          loadedCount++;
-          if (loadedCount === imageUrls.length) {
-            // All images are loaded
-            setLoading(false);
-          }
-        };
-      });
-    };
-
-    preloadImages();
-
-    // Cleanup function
-    return () => {
-      // Cancel image loading (if needed)
-    };
-  }, []);
-
-
-  useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 8000); // Change the delay time as needed
+    }, 5000); 
+    // setLoading(false); 
+  };
 
-    // Cleanup function to clear the timeout
-    return () => clearTimeout(timeout);
-  }, []);
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 5000); // Change the delay time as needed
+
+  //   // Cleanup function to clear the timeout
+  //   return () => clearTimeout(timeout);
+  // }, []);
 
   const isMobile = () => {
     return window.innerWidth <= 768;
   };
   return (
     <div className="App">
+      <Home home = {HOME} onImageLoaded={handleImageLoaded} />
+      {/* <Loading /> */}
       {loading ? (
         <Loading />
       ) : (
         <div className="mpage">
           {isMobile() ? <MobileNav /> : <Navbar />}
-          <Home />
           <MainPage />
         </div>
       )}

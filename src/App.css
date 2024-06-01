@@ -16,51 +16,56 @@
 body {
   background-color: #eaeaff;
 }
-
-.loading {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+.loading{
+  /* background: red; */
   height: 100vh;
+}
+.loader {
   position: absolute;
-  top: 0;
-
+  display: block;
+  --height-of-loader: 4px;
+  --loader-color: #0071e2;
   width: 100%;
+  height: var(--height-of-loader);
+  border-radius: 30px;
+  background-color: rgba(0,0,0,0.2);
+  position: relative;
+  top: 50%;
 }
 
-.loading .tex {
-  font-size: 3.2em;
-  font-weight: 700;
-  color: #00ab4d;
-}
-.x-logo {
-  width: 200px;
-  height: 00px;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.loading-bar {
-  width: 50%;
-  height: 30px;
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.loading-bar-inner {
-  height: 100%;
-  line-height: 30px;
+.loading .txt{
+  position: absolute;
+  top: 45%;
   text-align: center;
-  background-color: #2196f3;
-  transition: width 0.3s ease-in-out;
-  color: white;
+  /* background: yellow; */
+  width: 100%;
+  color: #00ab4d;
+  font-size: 1.1em;
+  font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
-  .loading-bar {
-    width: 90%;
+.loader::before {
+  content: "";
+  position: absolute;
+  background: var(--loader-color);
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  animation: moving 1s ease-in-out infinite;
+  ;
+}
+
+@keyframes moving {
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+    right: 0;
+    left: unset;
   }
 }
 
