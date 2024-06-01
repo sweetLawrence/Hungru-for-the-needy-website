@@ -11,13 +11,22 @@ import HOME from "./assets/images/home.jpg";
 function App() {
   const [loading, setLoading] = useState(true);
 
-  const handleImageLoaded = () => {
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      // setLoading(false);
+      const timeout = setTimeout(() => {
+        alert("Image Loaded")
+        setLoading(false);
+        
+      }, 5000); 
+    };
+    img.src = HOME;
 
-    const timeout = setTimeout(() => {
-      setLoading(false);
-    }, 5000); 
-    // setLoading(false); 
-  };
+  
+
+    // return () => clearTimeout(timeout);
+  }, []);
 
   // useEffect(() => {
   //   const timeout = setTimeout(() => {
@@ -33,13 +42,13 @@ function App() {
   };
   return (
     <div className="App">
-      <Home home = {HOME} onImageLoaded={handleImageLoaded} />
       {/* <Loading /> */}
       {loading ? (
         <Loading />
       ) : (
         <div className="mpage">
           {isMobile() ? <MobileNav /> : <Navbar />}
+          <Home home={HOME} />
           <MainPage />
         </div>
       )}
