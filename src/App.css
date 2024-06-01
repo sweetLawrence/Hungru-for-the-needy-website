@@ -29,7 +29,7 @@ body {
   width: 100%;
 }
 
-.loading .tex{
+.loading .tex {
   font-size: 3.2em;
   font-weight: 700;
   color: #00ab4d;
@@ -39,30 +39,196 @@ body {
   height: 00px;
   height: auto;
   margin-bottom: 20px;
-
 }
 
 .loading-bar {
-  width: 50%; 
-  height: 30px; 
+  width: 50%;
+  height: 30px;
   background-color: #f0f0f0;
-  border-radius: 5px; 
-  overflow: hidden; 
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .loading-bar-inner {
   height: 100%;
-  line-height: 30px; 
-  text-align: center; 
-  background-color: #2196F3; 
-  transition: width 0.3s ease-in-out; 
-  color: white; 
+  line-height: 30px;
+  text-align: center;
+  background-color: #2196f3;
+  transition: width 0.3s ease-in-out;
+  color: white;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .loading-bar {
-    width: 90%; 
-   
+    width: 90%;
+  }
+}
+
+/* .donation-card {
+  height: 100vh;
+  
+}
+.donation-card .container {
+  
+  width: 95%;
+  margin: 0 auto;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.donation-card .container .title {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.donation-card .container .equity-logo {
+  
+  
+}
+.donation-card .container img {
+  width: 100%;
+  margin-top: -60px;
+} */
+
+/* src/Styles/DonationCard.css */
+
+
+/* src/Styles/DonationCard.css */
+
+
+.donation-component{
+  position: relative;
+  margin-bottom: 10%;
   }
   
+  .donation-component .bg-image{
+    position: relative;
+    background: red;
+    height: 70vh;
+  }
+  .donation-component .bg-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.4);
+  }
+  .donation-component .bg-image .donate-text{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: gold;
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 30%;
+    /* background: red; */
+    text-align: start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+.donation-card .copy{
+  margin-top: 7%;
+}
+
+.donation-card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  background: rgb(225, 225, 250);
+  /* background: transparent; */
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+}
+
+.donation-card .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donation-card .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  /* color: white; */
+}
+
+.donation-card .title span {
+  font-size: 28px;
+  color: #e91e63; /* Example color, adjust as needed */
+color: #00ab4d;
+}
+
+.donation-card .equity-logo {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.donation-card .equity-logo img {
+  max-width: 150px;
+}
+
+.donation-card .paybill {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.donation-card .number, .donation-card .acc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donation-card .txt {
+  font-weight: bold;
+  color: #333;
+  /* color: white; */
+}
+
+.donation-card .num {
+  font-size: 20px;
+  color: #e91e63; /* Example color, adjust as needed */
+  color: #00ab4d;
+}
+
+.donation-card .account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.donation-card .account .txt {
+  font-weight: bold;
+  color: #333;
+  /* color: white; */
+}
+
+.donation-card .account .num {
+  font-size: 20px;
+  color: #e91e63; /* Example color, adjust as needed */
+  color: #00ab4d;
+}
+
+@media screen and (max-width:500px) {
+  .donation-card{
+    top: 70%;
+  }
+  .donation-component .donate-text{
+    width: 60%!important;
+    /* background: red; */
+  }
+
 }
