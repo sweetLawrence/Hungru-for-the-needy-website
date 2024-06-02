@@ -6,6 +6,7 @@
 }
 .mainpage {
   overflow-y: hidden;
+  height: auto;
 }
 .custom-toast{
   color: #00ab4d;
@@ -232,8 +233,16 @@ color: #00ab4d;
 }
 
 @media screen and (max-width:500px) {
+  .donation-component{
+    margin-bottom: 100%;
+  }
   .donation-card{
     top: 70%;
+    /* background: red; */
+    margin-bottom: 10%;
+    
+
+
   }
   .donation-component .donate-text{
     width: 60%!important;
