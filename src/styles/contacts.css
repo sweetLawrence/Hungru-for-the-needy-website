@@ -97,7 +97,7 @@
 @media screen and (max-width:500px) {
     .contacts{
         flex-direction: column;
-        height: 115vh;
+        height: 110vh;
     }
     .contacts .left{
         width: 100%;
