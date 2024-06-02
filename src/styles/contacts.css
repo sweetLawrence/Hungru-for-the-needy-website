@@ -98,6 +98,7 @@
     .contacts{
         flex-direction: column;
         height: 110vh;
+        width: 99%;
     }
     .contacts .left{
         width: 100%;
