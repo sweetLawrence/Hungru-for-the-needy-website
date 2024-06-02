@@ -112,4 +112,7 @@
     .contacts .right textarea {
         margin-top: 1.3em;
     }
+    .contacts .right .submit {
+        right: 18%;
+    }
 }
