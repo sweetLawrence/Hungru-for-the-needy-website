@@ -3,6 +3,9 @@ import "../styles/contacts.css";
 import Input from "../components/Input";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Contacts = () => {
   return (
@@ -14,19 +17,19 @@ const Contacts = () => {
           <span className="icon">
             <PhoneIcon />
           </span>
-          <div>+254712345678</div>
+          <div>+254759865680</div>
         </div>
         <div className="cont mail">
           <span className="icon">
             <EmailIcon />
           </span>
-          <div>hftn@gmail.com</div>
+          <div>hungryfortheneedy@gmail.com</div>
         </div>
         <div className="blob-section"></div>
         <div className="social-media">
-          <span>F</span>
-          <span>T</span>
-          <span>I</span>
+          <span><FacebookIcon /></span>
+          <span><XIcon /></span>
+          <span><InstagramIcon /></span>
         </div>
       </div>
 

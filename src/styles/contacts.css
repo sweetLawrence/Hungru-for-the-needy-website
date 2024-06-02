@@ -10,7 +10,7 @@
   position: relative;
 }
 .contacts .left {
-  width: 25%;
+  width: 30%;
   background: purple;
   background: #00297c;
   display: flex;
@@ -44,6 +44,10 @@
 }
 .contacts .left .social-media {
   color: white;
+  display: flex;
+  width: 45%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .contacts .right {
@@ -88,4 +92,23 @@
   /* align-self: self-end; */
   position: absolute;
   right: 14%;
+}
+
+@media screen and (max-width:500px) {
+    .contacts{
+        flex-direction: column;
+        height: 115vh;
+    }
+    .contacts .left{
+        width: 100%;
+        height: 50vh;
+    }
+    .contacts .right{
+        width: 100%;
+        margin-top: 1.5em;
+        
+    }
+    .contacts .right textarea {
+        margin-top: 1.3em;
+    }
 }
