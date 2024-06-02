@@ -29,7 +29,7 @@ function App() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 5000); // Change the delay time as needed
+    }, 2500); // Change the delay time as needed
 
     // Cleanup function to clear the timeout
     return () => clearTimeout(timeout);
