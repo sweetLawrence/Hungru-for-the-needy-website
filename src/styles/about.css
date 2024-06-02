@@ -1,5 +1,5 @@
 .about {
-  overflow: hidden;
+  
   margin: 20px auto;
   display: flex;
   /* padding: 20px; */
@@ -7,6 +7,7 @@
   width: 100%;
   /* background-color: #f9f9f9; */
   border-radius: 10px;
+  overflow: hidden!important;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 .about .left {
@@ -74,6 +75,7 @@
 @media (max-width: 767px) {
   .about {
     flex-direction: column;
+    overflow: hidden;
     /* margin-top: 40%; */
   }
   .about .left {
@@ -125,3 +127,14 @@
     /* background: red; */
   }
 }
+
+
+
+
+
+
+
+
+
+
+

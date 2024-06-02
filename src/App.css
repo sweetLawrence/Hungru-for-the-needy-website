@@ -5,7 +5,7 @@
   /* overflow: hidden; */
 }
 .mainpage {
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 #root {
   /* max-width: 1280px; */
@@ -110,7 +110,7 @@ body {
   
   .donation-component .bg-image{
     position: relative;
-    background: red;
+    /* background: red; */
     height: 70vh;
   }
   .donation-component .bg-image img{

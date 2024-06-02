@@ -5,11 +5,11 @@ import IMG2 from "../assets/images/donate.jpg";
 import HomeCard from "../components/HomeCard";
 import { useState } from "react";
 
-const Home = ({ home }) => {
+const Home = () => {
   return (
     <div className={`home`}>
       <div className="home_image">
-        <img src={home} alt="home_image" />
+        <img src={HOME} alt="home_image" />
       </div>
       <div className="card">
         <HomeCard />

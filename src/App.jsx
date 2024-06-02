@@ -11,44 +11,41 @@ import HOME from "./assets/images/home.jpg";
 function App() {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const img = new Image();
-    img.onload = () => {
-      // setLoading(false);
-      const timeout = setTimeout(() => {
-        alert("Image Loaded")
-        setLoading(false);
-        
-      }, 5000); 
-    };
-    img.src = HOME;
-
-  
-
-    // return () => clearTimeout(timeout);
-  }, []);
-
   // useEffect(() => {
-  //   const timeout = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 5000); // Change the delay time as needed
+  //   const img = new Image();
+  //   img.onload = () => {
+  //     // setLoading(false);
+  //     const timeout = setTimeout(() => {
+  //       alert("Image Loaded")
+  //       setLoading(false);
 
-  //   // Cleanup function to clear the timeout
-  //   return () => clearTimeout(timeout);
+  //     }, 5000);
+  //   };
+  //   img.src = HOME;
+
+  //   // return () => clearTimeout(timeout);
   // }, []);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 5000); // Change the delay time as needed
+
+    // Cleanup function to clear the timeout
+    return () => clearTimeout(timeout);
+  }, []);
 
   const isMobile = () => {
     return window.innerWidth <= 768;
   };
   return (
     <div className="App">
-      {/* <Loading /> */}
       {loading ? (
         <Loading />
       ) : (
         <div className="mpage">
           {isMobile() ? <MobileNav /> : <Navbar />}
-          <Home home={HOME} />
+          <Home />
           <MainPage />
         </div>
       )}
