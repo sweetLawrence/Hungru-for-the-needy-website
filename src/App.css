@@ -251,3 +251,51 @@ color: #00ab4d;
   }
 
 }
+
+
+
+
+
+.floating-label-input {
+  position: relative;
+  margin: 20px 0;
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input:focus {
+  border-color: #00ab4d;
+  outline: none;
+}
+
+.floating-label-input.focused .label,
+.floating-label-input .input:not(:placeholder-shown) + .label {
+  top: 5px;
+  left: 5px;
+  font-size: 12px;
+  color: #00ab4d;
+}
+
+.floating-label-input .input::placeholder {
+  opacity: 0;
+}

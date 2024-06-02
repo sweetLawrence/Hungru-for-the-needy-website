@@ -1,0 +1,91 @@
+.contacts {
+  background: white;
+  display: flex;
+  height: 75vh;
+
+  margin-left: .2em;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  width: 90%;
+  position: relative;
+}
+.contacts .left {
+  width: 25%;
+  background: purple;
+  background: #00297c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: start;
+  padding: 0.4em;
+  border-radius: 5px;
+}
+
+.contacts .left h2 {
+  color: white;
+}
+
+.contacts .icon {
+  /* line-height: 100px; */
+  margin-right: .6em;
+}
+
+.contacts .left p {
+  color: white;
+  width: 80%;
+}
+
+.contacts .left .cont {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts .left .social-media {
+  color: white;
+}
+
+.contacts .right {
+  width: 75%;
+  margin-top: 4%;
+}
+
+.contacts .right form .input-widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+.contacts .right input {
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 2px solid #00297c;
+  border-bottom: 2px solid #00ab4d;
+  width: 80%;
+  margin-top: 1.1em;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.contacts .right textarea {
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 2px solid purple;
+  border-bottom: 2px solid #00ab4d;
+  width: 80%;
+  margin-top: 3em;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.contacts .right .submit {
+  background: purple;
+  background: #00297c;
+  /* align-self: self-end; */
+  position: absolute;
+  right: 14%;
+}
