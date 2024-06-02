@@ -10,7 +10,8 @@
 }
 .custom-toast{
   color: #00ab4d;
-  background: #0071e2;
+  font-weight: 700;
+  background: #eaeaff;
 }
 #root {
   /* max-width: 1280px; */
