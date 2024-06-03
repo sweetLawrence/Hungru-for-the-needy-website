@@ -48,7 +48,8 @@ const MobileNav = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="mobile-nav animate__animated animate__fadeInDown">
+        <div className="mobile-nav">
+          {/* animate__animated animate__fadeInDown */}
           {Navdata.map((value, key) => (
             <div className="row" onClick={toggleMobileNav} key={key}>
               {/* {value} */}

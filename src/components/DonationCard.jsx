@@ -1,6 +1,6 @@
 import React from "react";
 import LOGO from "../assets/images/eq-logo.png";
-import Donation from "../assets/images/donate.jpg";
+import Donation from "../assets/images/donate.webp";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import { Toaster, toast } from "sonner";
 
