@@ -6,10 +6,10 @@ const ServiceCard = ({ icon, image, text }) => {
   return (
     <div className="service-card">
       <div className="icon">
-        <img src={icon} alt="icon_image" />
+        <img src={icon} alt="icon_image" loading="lazy"/>
       </div>
       <div className="s-card">
-        <img src={image} alt="service_image" />
+        <img src={image} alt="service_image" loading="lazy"/>
         <p className="desc">{text}</p>
       </div>
     </div>

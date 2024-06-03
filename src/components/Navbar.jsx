@@ -33,7 +33,7 @@ const Navbar = () => {
     <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
         <div className="image">
-          <img src={LOGO} alt="logo" />
+          <img src={LOGO} alt="logo" loading="lazy"/>
         </div>
         <div className="name">
           <span className="top">Hungry For</span>
