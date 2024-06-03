@@ -56,7 +56,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             offset={-100}
-            duration={900}
+            duration={500}
             className="row"
           >
             {value}
