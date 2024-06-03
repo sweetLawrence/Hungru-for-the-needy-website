@@ -20,7 +20,7 @@ const DonationCard = () => {
   };
 
   return (
-    <div className="donation-component">
+    <div className="donation-component" id="donate">
       <div className="bg-image">
         <img src={Donation} alt="logo" className="logo" />
         <div className="donate-text">

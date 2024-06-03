@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "../styles/mission.css";
 import MIVI from "../assets/images/mivi.png";
 // import DoneIcon from "@mui/icons-material/Done";
@@ -28,7 +29,16 @@ const Mission = () => {
             </div>
           </div>
           <div className="donate-div">
-            <button>Donate</button>
+            <Link
+              to="donate"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={900}
+              className="donate-button"
+            >
+              <button>Donate</button>
+            </Link>
           </div>
         </div>
         <div className="right">

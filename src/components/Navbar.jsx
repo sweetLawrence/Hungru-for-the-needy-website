@@ -55,16 +55,25 @@ const Navbar = () => {
             to={value.toLowerCase()}
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-100}
             duration={900}
             className="row"
           >
-           {value}
+            {value}
           </Link>
         ))}
       </div>
       <div className="donate">
-        <button>Donate</button>
+        <Link
+          to="donate"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={900}
+          className="donate-button"
+        >
+          <button>Donate</button>
+        </Link>
       </div>
     </div>
   );
