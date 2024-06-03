@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import "../styles/navbar.css";
 import { Navdata } from "../assets/data/Navdata";
 import LOGO from "../assets/images/hftn-logo.png";
@@ -7,7 +9,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const bottomTextStyle = {
-    color: scrolled ? "#000" : "#fff", 
+    color: scrolled ? "#000" : "#fff",
   };
 
   useEffect(() => {
@@ -35,15 +37,30 @@ const Navbar = () => {
         </div>
         <div className="name">
           <span className="top">Hungry For</span>
-          <span className="bottom" style={bottomTextStyle}>The Needy</span>
+          <span className="bottom" style={bottomTextStyle}>
+            The Needy
+          </span>
         </div>
       </div>
 
       <div className="content">
         {Navdata.map((value, key) => (
-          <div className="row" key={key}>
-            {value}
-          </div>
+          // <div className="row" key={key}>
+          //   {value}
+          // </div>
+
+          <Link
+            key={key}
+            activeClass="active"
+            to={value.toLowerCase()}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={900}
+            className="row"
+          >
+           {value}
+          </Link>
         ))}
       </div>
       <div className="donate">

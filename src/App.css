@@ -263,8 +263,3 @@ color: #00ab4d;
   padding: .7em;
 }
 
-@media screen and (max-width:500px) {
- .footer{
-  /* margin-top: -10%; */
- }
-}
