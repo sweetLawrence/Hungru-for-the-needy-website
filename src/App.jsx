@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import MainPage from "./pages/MainPage";
 import { useEffect, useState } from "react";
 import Loading from "./components/Loading";
-import HOME from "./assets/images/home.jpg";
 import FloatingDonate from "./components/FloatingDonate";
 
 function App() {
