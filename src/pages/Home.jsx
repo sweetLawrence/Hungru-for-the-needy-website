@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/home.css";
 import HOME from "../assets/images/home.webp";
-import IMG2 from "../assets/images/donate.jpg";
+import IMG2 from "../assets/images/donate.webp";
 import HomeCard from "../components/HomeCard";
 import { useState } from "react";
 
