@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className={`home`} id="home">
       <div className="home_image">
-        <img src={HOME} alt="home_image" loading="lazy"/>
+        <img src={HOME} alt="home_image"/>
       </div>
       <div className="card">
         <HomeCard />
@@ -25,7 +25,7 @@ const Home = () => {
         <div className="wave-support"></div>
       </div>
       <div className="circle">
-        <img src={IMG2} alt="img2" loading="lazy"/>
+        <img src={IMG2} alt="img2"/>
       </div>
     </div>
   );

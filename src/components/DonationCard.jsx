@@ -22,7 +22,7 @@ const DonationCard = () => {
   return (
     <div className="donation-component" id="donate">
       <div className="bg-image">
-        <img src={Donation} alt="logo" className="logo" loading="lazy"/>
+        <img src={Donation} alt="logo" className="logo"  />
         <div className="donate-text">
           Only life lived for others is a life worthwhile
         </div>
@@ -37,7 +37,7 @@ const DonationCard = () => {
           </div>
 
           <div className="equity-logo">
-            <img src={LOGO} alt="equity bank logo" loading="lazy"/>
+            <img src={LOGO} alt="equity bank logo"  />
           </div>
 
           <div className="paybill">
