@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../styles/contacts.css";
-import Input from "../components/Input";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from '@mui/icons-material/Facebook';

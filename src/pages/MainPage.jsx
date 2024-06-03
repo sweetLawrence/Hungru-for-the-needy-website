@@ -5,6 +5,7 @@ import Services from "./Services";
 import DonationCard from "../components/DonationCard";
 import Home from "./Home";
 import Contacts from "./Contacts";
+import Footer from "../components/Footer";
 
 const MainPage = () => {
   return (
@@ -15,6 +16,7 @@ const MainPage = () => {
       <Services />
       <DonationCard />
       <Contacts />
+      <Footer />
     </div>
   );
 };
