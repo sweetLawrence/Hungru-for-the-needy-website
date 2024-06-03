@@ -8,7 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Contacts = () => {
   return (
-    <div className="contacts">
+    <div className="contacts" id="contacts">
       <div className="left">
         <h2>Contact Form</h2>
         <p>Fill the form and our team will get back to you within 24 hours</p>

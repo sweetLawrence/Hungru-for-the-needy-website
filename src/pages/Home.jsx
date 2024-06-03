@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Home = () => {
   return (
-    <div className={`home`}>
+    <div className={`home`} id="home">
       <div className="home_image">
         <img src={HOME} alt="home_image" />
       </div>
