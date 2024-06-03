@@ -47,7 +47,7 @@ function App() {
           {isMobile() ? <MobileNav /> : <Navbar />}
           <Home />
           <MainPage />
-          <FloatingDonate />
+          
         </div>
       )}
     </div>

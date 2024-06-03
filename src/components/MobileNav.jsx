@@ -142,9 +142,9 @@ const MobileNav = () => {
               activeClass="active"
               to={value.toLowerCase()}
               spy={true}
-              smooth={false}
+              smooth={true}
               offset={-95}
-              duration={1800}
+              duration={500}
               onClick={toggleMobileNav}
             >
               <div
