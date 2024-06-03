@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "../styles/homecard.css";
 
 const HomeCard = () => {
@@ -12,8 +13,18 @@ const HomeCard = () => {
       </p>
       <div className="dnt">
         <div className="donate">
+        <Link
+              to="donate"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={900}
+              className="donate-button"
+            >
           <button>Donate</button>
+          </Link>
         </div>
+        
         {/* <Button text="Donate" /> */}
       </div>
     </div>

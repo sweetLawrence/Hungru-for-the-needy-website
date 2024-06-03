@@ -263,3 +263,43 @@ color: #00ab4d;
   padding: .7em;
 }
 
+
+/* Floating Donate */
+.floating-donate {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.floating-donate-button button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.d-icon{
+  /* background: white; */
+  color:#00ab4d;
+  margin-right: 1.6em;
+  scale: 1.5;
+  animation: icon 7s infinite forwards linear;
+}
+/* @keyframes icon {
+  0%{
+    scale: 1;
+  }
+  100%{
+    scale: 9;
+  }
+  
+} */
+.floating-donate-button button:hover {
+  background-color: #e64a19;
+}

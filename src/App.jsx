@@ -7,6 +7,7 @@ import MainPage from "./pages/MainPage";
 import { useEffect, useState } from "react";
 import Loading from "./components/Loading";
 import HOME from "./assets/images/home.jpg";
+import FloatingDonate from "./components/FloatingDonate";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -47,6 +48,7 @@ function App() {
           {isMobile() ? <MobileNav /> : <Navbar />}
           <Home />
           <MainPage />
+          <FloatingDonate />
         </div>
       )}
     </div>
