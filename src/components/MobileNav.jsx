@@ -135,7 +135,7 @@ const MobileNav = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="mobile-nav">
+        <div className="mobile-nav animate__animated animate__fadeInDown">
           {Navdata.map((value, key) => (
             <ScrollLink
               key={key}
