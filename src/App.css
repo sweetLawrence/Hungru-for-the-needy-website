@@ -260,4 +260,11 @@ color: #00ab4d;
   align-items: center;
   color: white;
   font-weight: 600;
+  padding: .7em;
+}
+
+@media screen and (max-width:500px) {
+ .footer{
+  /* margin-top: -10%; */
+ }
 }
