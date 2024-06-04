@@ -5,6 +5,13 @@
 .fail-toast{
   color: red;
 }
+.e-link{
+  color: white;
+  transition: all .4s;
+}
+.e-link:hover{
+  color: #00ab4d;
+}
 .contacts {
   background: white;
   display: flex;
@@ -25,7 +32,7 @@
   align-items: center;
   justify-content: space-around;
   text-align: start;
-  padding: 0.4em;
+  padding: 1.4em;
   border-radius: 5px;
 }
 
@@ -41,13 +48,15 @@
 .contacts .left p {
   color: white;
   width: 80%;
+  align-self: self-start;
 }
 
 .contacts .left .cont {
   color: white;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  align-self: self-start;
 }
 .contacts .left .social-media {
   color: white;

@@ -27,14 +27,14 @@ const Contacts = () => {
       .then(
         (result) => {
           console.log(result.text);
-          toast.success("Your message has been sent successfully",{
-            className: 'success-toast',
+          toast.success("Your message has been sent successfully", {
+            className: "success-toast",
           });
         },
         (error) => {
           console.log(error.text);
-          toast.error("Failed to send email",{
-            className: 'success-toast',
+          toast.error("Failed to send email", {
+            className: "success-toast",
           });
         }
       );
@@ -56,18 +56,33 @@ const Contacts = () => {
           <span className="icon">
             <EmailIcon />
           </span>
-          <div>hungryfortheneedy@gmail.com</div>
+          <a
+            className="e-link"
+            href="mailto:hungryfortheneedy@gmail.com?subject=Enquiry%20Here"
+          >
+            hungryfortheneedy@gmail.com
+          </a>
         </div>
         <div className="blob-section"></div>
         <div className="social-media">
           <span>
-            <FacebookIcon />
+            <a className="e-link" href="" target="_blank">
+              <FacebookIcon />
+            </a>
           </span>
           <span>
-            <XIcon />
+            <a className="e-link" href="" target="_blank">
+              <XIcon />
+            </a>
           </span>
           <span>
-            <InstagramIcon />
+            <a
+              className="e-link"
+              href="https://www.instagram.com/hungry_fortheneedy?utm_source=qr&igsh=MTZoNmN2ZWIwb3o5MA== "
+              target="_blank"
+            >
+              <InstagramIcon />
+            </a>
           </span>
         </div>
       </div>

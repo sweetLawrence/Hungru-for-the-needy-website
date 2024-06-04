@@ -1,7 +1,7 @@
 import "./App.css";
 import MobileNav from "./components/MobileNav";
 import Navbar from "./components/Navbar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Home from "./pages/Home";
 import MainPage from "./pages/MainPage";
 import { useEffect, useState } from "react";
@@ -10,27 +10,12 @@ import Loading from "./components/Loading";
 function App() {
   const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   const img = new Image();
-  //   img.onload = () => {
-  //     // setLoading(false);
-  //     const timeout = setTimeout(() => {
-  //       alert("Image Loaded")
-  //       setLoading(false);
-
-  //     }, 5000);
-  //   };
-  //   img.src = HOME;
-
-  //   // return () => clearTimeout(timeout);
-  // }, []);
-
+  
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 2500); // Change the delay time as needed
+    }, 2500); 
 
-    // Cleanup function to clear the timeout
     return () => clearTimeout(timeout);
   }, []);
 
