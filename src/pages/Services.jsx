@@ -52,7 +52,7 @@ const Services = () => {
           icon={SCHOLARICON}
           image={SCHOLARSHIP}
           text="Schorlaship Opportunities"
-          info="Empowering futures! We offer scholarships for [areas of focus] to help students overcome financial barriers and achieve their academic dreams"
+          info="Empowering futures! We offer scholarships to help students overcome financial barriers and achieve their academic dreams"
         />
         <ServiceCard
           icon={CAMPICON}
