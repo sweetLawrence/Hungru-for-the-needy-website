@@ -107,7 +107,8 @@ import '../styles/navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [activeItem, setActiveItem] = useState(null); // Define activeItem state
+  const [activeItem, setActiveItem] = useState(null); 
+  
 
   const bottomTextStyle = {
     color: scrolled ? '#000' : '#fff',
@@ -128,7 +129,7 @@ const Navbar = () => {
     scrollSpy.update();
 
     Events.scrollEvent.register('begin', (to, element) => {
-      setActiveItem(to); // Set activeItem when scrolling begins
+      setActiveItem(to); 
     });
 
     return () => {

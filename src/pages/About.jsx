@@ -1,14 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+// import { Link, scrollSpy, Events, animateScroll as scroll } from "react-scroll";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "../styles/about.css";
 import Charity from "../assets/images/charity.webp";
 
 const About = () => {
   const [expanded, setExpanded] = useState(false);
+  const [activeItem, setActiveItem] = useState(null);
+
 
   const toggleExpand = () => {
     setExpanded(!expanded);
   };
+
+  // useEffect(() => {
+  //   scrollSpy.update();
+  //   Events.scrollEvent.register("begin", (to, element) => {
+  //     setActiveItem(to);
+  //   });
+
+    
+  //   return () => {
+  //     Events.scrollEvent.remove('begin');
+  //   };
+
+  // }, []);
 
   return (
     <div className="about" id="about">
@@ -24,15 +40,15 @@ const About = () => {
           </div>
         </div>
         <div className="readmore">
-          <Link
-            to="contacts"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={900}
-            className="donate-button"
-          >
-            <button className="read_more">Contact Us</button>
+        <Link
+              to="donate"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={900}
+              className="donate-button"
+            >
+            <button className="read_more">Contact us</button>
           </Link>
         </div>
       </div>
