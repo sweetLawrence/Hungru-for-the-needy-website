@@ -9,7 +9,6 @@ const DonationCard = () => {
 
     navigator.clipboard.writeText(text)
     .then(() => {
-        // alert("Account number copied to clipboard: " + text);
         toast.success("Account Number copied to clipboard successfully", {
             className: 'custom-toast',
         });

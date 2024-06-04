@@ -3,13 +3,12 @@ import "../styles/home.css";
 import HOME from "../assets/images/home.webp";
 import IMG2 from "../assets/images/donate.webp";
 import HomeCard from "../components/HomeCard";
-import { useState } from "react";
 
 const Home = () => {
   return (
     <div className={`home`} id="home">
       <div className="home_image">
-        <img src={HOME} alt="home_image"/>
+        <img src={HOME} alt="home_image" fetchPriority="high" />
       </div>
       <div className="card">
         <HomeCard />
@@ -25,7 +24,7 @@ const Home = () => {
         <div className="wave-support"></div>
       </div>
       <div className="circle">
-        <img src={IMG2} alt="img2"/>
+        <img src={IMG2} alt="img2" fetchPriority="high" />
       </div>
     </div>
   );

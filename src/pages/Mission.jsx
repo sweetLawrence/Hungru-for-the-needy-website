@@ -2,7 +2,6 @@ import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "../styles/mission.css";
 import MIVI from "../assets/images/mivi.png";
-// import DoneIcon from "@mui/icons-material/Done";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const Mission = () => {
@@ -83,7 +82,7 @@ const Mission = () => {
           <div className="goalcard">
             <div className="blob two">
               <div className="icon two">
-                {/* <DoneIcon /> */}
+      
                 <IoMdCheckmarkCircleOutline />
               </div>
             </div>
@@ -92,7 +91,7 @@ const Mission = () => {
           <div className="goalcard">
             <div className="blob three">
               <div className="icon th">
-                {/* <DoneIcon /> */}
+               
                 <IoMdCheckmarkCircleOutline />
               </div>
             </div>
@@ -101,7 +100,7 @@ const Mission = () => {
           <div className="goalcard">
             <div className="blob four">
               <div className="icon four">
-                {/* <DoneIcon /> */}
+                
                 <IoMdCheckmarkCircleOutline />
               </div>
             </div>

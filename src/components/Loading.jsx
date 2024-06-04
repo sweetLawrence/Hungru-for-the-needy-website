@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "animate.css";
-// import './Loading.css'; // Import CSS file for loading animation
-import charityLogo from "../assets/images/hftn-logo.png"; // Import your charity logo
 
 const Loading = () => {
 

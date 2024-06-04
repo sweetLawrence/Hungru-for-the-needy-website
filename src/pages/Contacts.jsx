@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import "../styles/contacts.css";
 import emailjs from "@emailjs/browser";
-
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -96,22 +95,19 @@ const Contacts = () => {
 
           <div className="input-widget">
             <label htmlFor="email">Email</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              // required
-            />
+            <input type="text" id="email" name="email" required />
           </div>
 
           <div className="input-widget">
             <label htmlFor="cell">Cell</label>
-            <input type="text" id="cell" name="cell" />
+            <input 
+            required
+            type="text" id="cell" name="cell" />
           </div>
 
           <div className="input-widget">
             <label htmlFor="msg">Message</label>
-            <textarea name="message" id="msg"></textarea>
+            <textarea required name="message" id="msg"></textarea>
           </div>
 
           <button type="submit" className="submit">
@@ -119,18 +115,7 @@ const Contacts = () => {
           </button>
         </form>
       </div>
-      {/* <Toaster
-        richColors
-        position="top-right"
-        autoClose={1000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      /> */}
+
     </div>
   );
 };

@@ -25,7 +25,7 @@ const HomeCard = () => {
           </Link>
         </div>
         
-        {/* <Button text="Donate" /> */}
+       
       </div>
     </div>
   );
