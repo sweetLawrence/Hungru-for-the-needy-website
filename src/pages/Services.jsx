@@ -16,7 +16,7 @@ import CAMPICON from "../assets/images/campicon.png";
 
 const Services = () => {
   return (
-    <div className="services">
+    <div className="services" id="services">
       <div className="title-section">
         <h2>What We Do</h2>
       </div>

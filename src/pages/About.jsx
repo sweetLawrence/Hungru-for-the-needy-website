@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "../styles/about.css";
 import Charity from "../assets/images/charity.webp";
 
@@ -23,11 +24,20 @@ const About = () => {
           </div>
         </div>
         <div className="readmore">
-          <button className="read_more">Read More</button>
+          <Link
+            to="contacts"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={900}
+            className="donate-button"
+          >
+            <button className="read_more">Contact Us</button>
+          </Link>
         </div>
       </div>
       <div className="right">
-        <img src={Charity} alt="charity illustration"  />
+        <img src={Charity} alt="charity illustration" />
         <div className="blob">
           <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <path
