@@ -1,3 +1,10 @@
+.success-toast{
+  color: #00ab4d;
+  /* top: 10%; */
+}
+.fail-toast{
+  color: red;
+}
 .contacts {
   background: white;
   display: flex;

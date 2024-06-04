@@ -1,12 +1,46 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "../styles/contacts.css";
+import emailjs from "@emailjs/browser";
+
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import XIcon from '@mui/icons-material/X';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from "@mui/icons-material/Facebook";
+import XIcon from "@mui/icons-material/X";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { Toaster, toast } from "sonner";
 
 const Contacts = () => {
+  const [sentStatus, setSentStatus] = useState(false);
+
+  const form = useRef();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_2gd73or",
+        "template_824wu7f",
+        form.current,
+        "-8ZfrslCkIVcHkhaM"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Your message has been sent successfully",{
+            className: 'success-toast',
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Failed to send email",{
+            className: 'success-toast',
+          });
+        }
+      );
+    setSentStatus(!sentStatus);
+    e.target.reset();
+  }
   return (
     <div className="contacts" id="contacts">
       <div className="left">
@@ -26,22 +60,33 @@ const Contacts = () => {
         </div>
         <div className="blob-section"></div>
         <div className="social-media">
-          <span><FacebookIcon /></span>
-          <span><XIcon /></span>
-          <span><InstagramIcon /></span>
+          <span>
+            <FacebookIcon />
+          </span>
+          <span>
+            <XIcon />
+          </span>
+          <span>
+            <InstagramIcon />
+          </span>
         </div>
       </div>
 
       <div className="right">
-        <form>
+        <form ref={form} onSubmit={handleSubmit}>
           <div className="input-widget">
             <label htmlFor="name">Name</label>
-            <input type="text" id="name" name="name" />
+            <input type="text" id="name" name="name" required />
           </div>
 
           <div className="input-widget">
             <label htmlFor="email">Email</label>
-            <input type="text" id="email" name="email" />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              // required
+            />
           </div>
 
           <div className="input-widget">
@@ -59,6 +104,18 @@ const Contacts = () => {
           </button>
         </form>
       </div>
+      {/* <Toaster
+        richColors
+        position="top-right"
+        autoClose={1000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      /> */}
     </div>
   );
 };
