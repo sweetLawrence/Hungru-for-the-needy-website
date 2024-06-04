@@ -174,7 +174,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={900}
+          duration={1000}
           className="donate-button"
         >
           <button>Donate</button>

@@ -144,7 +144,7 @@ const MobileNav = () => {
               spy={true}
               smooth={true}
               offset={-95}
-              duration={500}
+              duration={1200}
               onClick={toggleMobileNav}
             >
               <div
