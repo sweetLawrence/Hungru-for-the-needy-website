@@ -3,11 +3,12 @@ import "../styles/home.css";
 import HOME from "../assets/images/home.webp";
 import IMG2 from "../assets/images/donate.webp";
 import HomeCard from "../components/HomeCard";
-
+import HomeSmall from '../assets/images/home-small.png'
+import Img2small from '../assets/images/donate-small.png'
 const Home = () => {
   return (
     <div className={`home`} id="home">
-      <div className="home_image">
+      <div className="home_image" style={{ backgroundImage: `url(${HomeSmall})` }}>
         <img src={HOME} alt="home_image" />
       </div>
       <div className="card">
@@ -23,8 +24,8 @@ const Home = () => {
         </svg>
         <div className="wave-support"></div>
       </div>
-      <div className="circle">
-        <img src={IMG2} alt="img2" />
+      <div className="circle" style={{ backgroundImage: `url(${Img2small})` }}>
+        <img src={IMG2} alt="img2"/>
       </div>
     </div>
   );
