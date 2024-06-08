@@ -65,7 +65,7 @@ const Contacts = () => {
         <div className="blob-section"></div>
         <div className="social-media">
           <span>
-            <a className="e-link" href="" target="_blank">
+            <a className="e-link" href="https://www.facebook.com/profile.php?id=100069583481486" target="_blank">
               <FacebookIcon />
             </a>
           </span>
