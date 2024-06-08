@@ -41,7 +41,7 @@ const About = () => {
         </div>
         <div className="readmore">
         <Link
-              to="donate"
+              to="contacts"
               spy={true}
               smooth={true}
               offset={-100}

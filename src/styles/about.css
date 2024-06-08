@@ -70,6 +70,7 @@
 .about .read_more {
   margin-left: 0.7em;
   background: #00ab4d;
+  z-index: 1;
 }
 .about .read_more:focus,
 .about .read_more:focus-visible {
