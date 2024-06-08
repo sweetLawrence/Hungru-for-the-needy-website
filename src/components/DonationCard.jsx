@@ -1,28 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import LOGO from "../assets/images/eq-logo.png";
 import Donation from "../assets/images/donate.webp";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import { Toaster, toast } from "sonner";
-import Img2small from '../assets/images/donate-small.png'
+import Img2small from "../assets/images/donate-small.png";
 
 const DonationCard = () => {
-  const copyTheText = (text) => {
+  const [imgLoaded, setImgLoaded] = useState(false);
 
-    navigator.clipboard.writeText(text)
-    .then(() => {
+  function handleLoad() {
+    setImgLoaded(true);
+  }
+
+  const copyTheText = (text) => {
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
         toast.success("Account Number copied to clipboard successfully", {
-            className: 'custom-toast',
+          className: "custom-toast",
         });
-    })
-    .catch(err => {
-        console.error('Failed to copy: ', err);
-    });
+      })
+      .catch((err) => {
+        console.error("Failed to copy: ", err);
+      });
   };
 
   return (
     <div className="donation-component" id="donate">
-      <div className="bg-image" style={{ backgroundImage: `url(${Img2small})` }}>
-        <img src={Donation} alt="logo" className="logo"  />
+      <div
+        className="bg-image"
+        style={{ backgroundImage: `url(${Img2small})` }}
+      >
+        <img
+          src={Donation}
+          alt="logo"
+          className="logo"
+          onLoad={handleLoad}
+          style={{
+            opacity: imgLoaded ? 1 : 0,
+            transition: "opacity 400ms ease-in-out",
+          }}
+        />
         <div className="donate-text">
           Only life lived for others is a life worthwhile
         </div>
@@ -37,7 +55,7 @@ const DonationCard = () => {
           </div>
 
           <div className="equity-logo">
-            <img src={LOGO} alt="equity bank logo"  />
+            <img src={LOGO} alt="equity bank logo" />
           </div>
 
           <div className="paybill">
@@ -55,7 +73,10 @@ const DonationCard = () => {
           <div className="account">
             <span className="txt">Account Number</span>
             <span className="num">0910182950369</span>
-            <button className="copy" onClick={() => copyTheText('0910182950369')}>
+            <button
+              className="copy"
+              onClick={() => copyTheText("0910182950369")}
+            >
               Copy to clipboard
             </button>
           </div>
@@ -77,4 +98,3 @@ const DonationCard = () => {
 };
 
 export default DonationCard;
-
