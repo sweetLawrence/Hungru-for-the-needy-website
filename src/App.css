@@ -118,6 +118,8 @@ body {
     position: relative;
     /* background: red; */
     height: 70vh;
+    background-size: cover;
+    background-position: center;
   }
   .donation-component .bg-image img{
     width: 100%;

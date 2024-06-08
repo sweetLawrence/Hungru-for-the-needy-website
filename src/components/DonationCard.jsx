@@ -3,6 +3,7 @@ import LOGO from "../assets/images/eq-logo.png";
 import Donation from "../assets/images/donate.webp";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import { Toaster, toast } from "sonner";
+import Img2small from '../assets/images/donate-small.png'
 
 const DonationCard = () => {
   const copyTheText = (text) => {
@@ -20,7 +21,7 @@ const DonationCard = () => {
 
   return (
     <div className="donation-component" id="donate">
-      <div className="bg-image">
+      <div className="bg-image" style={{ backgroundImage: `url(${Img2small})` }}>
         <img src={Donation} alt="logo" className="logo"  />
         <div className="donate-text">
           Only life lived for others is a life worthwhile
